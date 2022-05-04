@@ -1,0 +1,78 @@
+.nav-design{
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(0, 0, 0, 0.7);
+    z-index:99;
+    width:100%;
+    padding-top: 0;
+    padding-bottom:0;
+}
+
+.menu-title{
+    font-weight: 900;
+    font-size: 15px;
+    color: #85C1E9;
+}
+
+.menu-style{
+  font-size: 14px;
+  font-weight: 500;
+  color:#ffffff;
+  text-transform: capitalize;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.nav-bg a{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.nav-bg a:hover{
+    background-color: #c7081b;
+}
+.nav-p-none{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* ======= up login section ======= */
+.top-header{
+    padding-left: 5px;
+    padding-bottom: 5px;
+    background:rgba(0, 0, 0, 0.2);
+    }
+    
+
+.login-language-main img{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.login-language-main span{
+    padding-left: 20px;
+    font-size: 13px;
+    color:#929596;
+    cursor:pointer;
+}
+.login-language-main span:hover{
+   color: #ffffff;
+}
+.login-language-main i{
+    margin-top: 5px;
+    padding-right: 5px;
+    color:#929596 ;
+    font-size: 13px;
+}
+.login-language-main i:hover{
+    color:#ffffff;
+}
+.contact{
+    text-align: right;
+}
+
+
