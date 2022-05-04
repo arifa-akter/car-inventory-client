@@ -1,0 +1,38 @@
+.img-height{
+    height: 560px;
+}
+.banner-heading h3{
+    text-align: left;
+    font-size: 60px;
+    margin-bottom: 150px;
+    font-weight: 900;
+    color:#ffffffd5;
+}
+.name-style-2{
+    font-size: 60px;
+    color:#007bffc7;
+    font-weight: 500;
+}
+.name-style{
+    display: block;
+    margin-top: 20px;
+    font-weight: 900;
+    color:#f3e9e9ad;
+   text-align:center;
+}
+.name-style-3{
+    display: block;
+    margin-top: 20px;
+    font-weight: 900;
+    color:#ffc1079a;
+}
+.name-style-4{
+    font-size: 60px;
+    color:#007bff;
+    font-weight: 500;
+    color:#c7081b;
+}
+
+.text h3{
+    text-align: center;
+}

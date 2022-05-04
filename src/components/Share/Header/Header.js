@@ -3,6 +3,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import profile from '../../../images/profile.png'
 import './Header.css'
+import logo from '../../../images/logo.png'
 const Header = () => {
     return (
   <section className='nav-design'>
@@ -35,8 +36,7 @@ const Header = () => {
       <Navbar collapseOnSelect expand="lg"  variant="dark" className="nav-p-none">
   <Container>
   <Navbar.Brand as={Link} to="/home">
-      {/* <img style={{width:'50px', height:'50px'}} alt="" /> */}
-      <span className="menu-title">arifa</span>
+      <img src={logo} style={{width:'70px', height:'50px'}} alt="" />
   </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
