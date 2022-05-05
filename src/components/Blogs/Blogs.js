@@ -105,14 +105,11 @@ const Blogs = () => {
 
                           <h2> <span>4.</span>what is the purpose of Jwt and how does it work</h2>
                         <p>
-                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                          Aperiam reiciendis tempora nisi tempore adipisci ab quod nemo
-                           labore quam eos facilis necessitatibus ea distinctio,
-                            blanditiis asperis vel obcaecati dignissimos qui.
-                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                          Aperiam reiciendis tempora nisi tempore adipisci ab quod nemo
-                           labore quam eos facilis necessitatibus ea distinctio,
-                            blanditiis asperis vel obcaecati dignissimos qui.
+                        jwt stand for json web token it is a most popular web authorization for maicroservice
+                        it main purpose of jwt two party are connected secure stander way. there  rsc 7519 stander structure are told 
+                        how jwt work how it design rsc is a stander structure of jwt . when client authenticate then server store a information in json formet and also sign 
+                        pass this information in client side next time client full json token send in server. client store information in browser and cookies 
+
                         </p>
 
                         </div>
