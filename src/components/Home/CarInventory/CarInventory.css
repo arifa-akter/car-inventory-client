@@ -1,0 +1,15 @@
+.car-inventory{
+    position: relative;
+    padding-top:100px;
+    padding-bottom:100px;
+    background: url(../../../images/background1.png) center no-repeat;
+    background-size: cover;
+
+}
+
+.car-house-header{
+    text-align:center;
+    font-size: 40px;
+    font-weight: 600;
+    color:#c7081b;
+}

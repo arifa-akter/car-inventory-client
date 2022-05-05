@@ -1,0 +1,322 @@
+[
+    {
+      "id": 1,
+      "name": "Tesla",
+      "image": "https://i.ibb.co/LvYsRRT/item14.jpg",
+      "quantity": 5,
+      "description": {
+        "seating": "5-seat",
+        "body": "suv",
+        "odometer": "50,000",
+        "transmission": "5-speed automatic",
+        "color": "Black",
+        "comfortable": "This truck is comfortable to sit in, drives smoothly, and only has 50,000 miles on the odometer."
+      },
+      "price": 5000,
+      "supplier": "Navana.Ltd"
+    },
+    {
+      "id": 2,
+      "name": "BMW",
+      "image": "https://i.ibb.co/yN3zHnB/item12.jpg",
+      "quantity": 10,
+      "description": {
+        "seating": "3-seat",
+        "body": "Muv",
+        "odometer": "40,000",
+        "transmission": "6-speed automatic",
+        "color": "Black",
+        "comfortable": "This truck is comfortable to sit in, drives smoothly and first, and only has 40,000 miles on the odometer."
+      },
+      "price": 7000,
+      "supplier": "BMW motors"
+    },
+    {
+      "id": 3,
+      "name": "Ferrari",
+      "image": "https://i.ibb.co/ThcLY0t/item13.jpg",
+      "quantity": 10,
+      "description": {
+        "seating": "3-seat",
+        "body": "juv",
+        "odometer": "70,000",
+        "transmission": "6-speed automatic",
+        "color": "gray",
+        "comfortable": "This truck is comfortable to sit in, and only has 70,000 miles on the odometer you can modify color."
+      },
+      "price": 60000,
+      "supplier": "car auto museum"
+    },
+    {
+      "id": 4,
+      "name": "Ford",
+      "image": "https://i.ibb.co/hDMqHtw/item11.jpg",
+      "quantity": 6,
+      "description": {
+        "seating": "4-seat",
+        "body": "juv",
+        "odometer": "60,000",
+        "transmission": "4-speed automatic",
+        "color": "light-green",
+        "comfortable": "This truck is comfortable to sit in, drives smoothly, and only has 60,000 miles on the odometer modify color."
+      },
+      "price": 60000,
+      "supplier": "Toyta corporation"
+    },
+    {
+      "id": 5,
+      "name": "Porsche",
+      "image": "https://i.ibb.co/Sthvd85/item9.jpg",
+      "quantity": 16,
+      "description": {
+        "seating": "4-seat",
+        "body": "suv",
+        "odometer": "40,000",
+        "transmission": "4-speed automatic",
+        "color": "light blue",
+        "comfortable": "This truck is comfortable to sit in, drives smoothly, and only has 40,000 miles on the odometer."
+      },
+      "price": 70000,
+      "supplier": "kia motor"
+    },
+    {
+      "id": 6,
+      "name": "HOnda",
+      "image": "https://i.ibb.co/Bt7FyzJ/item10.jpg",
+      "quantity": 10,
+      "description": {
+        "seating": "4-seat",
+        "body": "muv",
+        "odometer": "40,000",
+        "transmission": "4-speed automatic",
+        "color": "green",
+        "comfortable": "This truck is comfortable to sit in, drives smoothly, and only has 40,000 miles on the odometer change color."
+      },
+      "price": 20000,
+      "supplier": "Tusho corporation"
+    },
+    {
+      "id": 7,
+      "name": "Lamberghni",
+      "image": "https://i.ibb.co/HCxCJfK/item15.jpg",
+      "quantity": 20,
+      "description": {
+        "seating": "2-seat",
+        "body": "juv",
+        "odometer": "60,000",
+        "transmission": "4-speed automatic",
+        "color": "blue",
+        "comfortable": "This truck is comfortable to sit in, drives smoothly, and only has 60,000 miles on the odometer."
+      },
+      "price": 400000,
+      "supplier": "Azad corporation"
+    },
+    {
+      "id": 8,
+      "name": "Toyta",
+      "image": "https://i.ibb.co/ZYZjvZ8/item8.jpg",
+      "quantity": 15,
+      "description": {
+        "seating": "3-seat",
+        "body": "luv",
+        "odometer": "40,000",
+        "transmission": "6-speed automatic",
+        "color": "Gary",
+        "comfortable": "This truck is comfortable to sit in, drives smoothly, and only has 40,000 miles on the odometer."
+      },
+      "price": 40000,
+      "supplier": "Progress Motors"
+    },
+    {
+      "id": 9,
+      "name": "Bentley",
+      "image": "https://i.ibb.co/4mNq8cS/item7.jpg",
+      "quantity": 5,
+      "description": {
+        "seating": "5-seat",
+        "body": "nuv",
+        "odometer": "70,000",
+        "transmission": "8-speed automatic",
+        "color": "light green",
+        "comfortable": "This truck is comfortable to sit in, drives smoothly, and only has 70,000 miles on the odometer."
+      },
+      "price": 60000,
+      "supplier": "Progress motrs"
+    },
+    {
+      "id": 10,
+      "name": "Maserati",
+      "image": "https://i.ibb.co/cctfs2s/item6.jpg",
+      "quantity": 10,
+      "description": {
+        "seating": "3-seat",
+        "body": "kuv",
+        "odometer": "70,000",
+        "transmission": "6-speed automatic",
+        "color": "red",
+        "comfortable": "This truck is comfortable to sit in, drives smoothly, and only has 70,000 miles on the odometer."
+      },
+      "price": 40000,
+      "supplier": "sal sabeal.Ltd"
+    },
+    {
+      "id": 11,
+      "name": "Audi",
+      "image": "https://i.ibb.co/NrRNxws/item5.jpg",
+      "quantity": 15,
+      "description": {
+        "seating": "5-seat",
+        "body": "suv",
+        "odometer": "60,000",
+        "transmission": "5-speed automatic",
+        "color": "Black",
+        "comfortable": "This truck is comfortable to sit in, drives smoothly, and only has 60,000 miles on the odometer."
+      },
+      "price": 10600,
+      "supplier": "japan car dealer"
+    },
+    {
+      "id": 12,
+      "name": "jeep",
+      "image": "https://i.ibb.co/N6cJnpC/item4.jpg",
+      "quantity": 5,
+      "description": {
+        "seating": "5-seat",
+        "body": "kuv",
+        "odometer": "60,000",
+        "transmission": "4-speed automatic",
+        "color": "white",
+        "comfortable": "This truck is comfortable to sit in, drives smoothly, and only has 60,000 miles on the odometer."
+      },
+      "price": 14000,
+      "supplier": "Mitsubihi Motors"
+    },
+    {
+      "id": 13,
+      "name": "Subaru",
+      "image": "https://i.ibb.co/jDcfbxs/item3.jpg",
+      "quantity": 15,
+      "description": {
+        "seating": "52-seat",
+        "body": "fuv",
+        "odometer": "40,000",
+        "transmission": "6-speed automatic",
+        "color": "white",
+        "comfortable": "This truck is comfortable to sit in, drives smoothly, and only has 50,000 miles on the odometer."
+      },
+      "price": 125700,
+      "supplier": "Zam Zam Ltd"
+    },
+    {
+      "id": 14,
+      "name": "cadillac",
+      "image": "https://i.ibb.co/zNwQ94K/item20.jpg",
+      "quantity": 5,
+      "description": {
+        "seating": "5-seat",
+        "body": "suv",
+        "odometer": "50,000",
+        "transmission": "5-speed automatic",
+        "color": "gray",
+        "comfortable": "This truck is comfortable to sit in, drives smoothly, and only has 50,000 miles on the odometer."
+      },
+      "price": 125496,
+      "supplier": "Hundai Motors"
+    },
+    {
+      "id": 15,
+      "name": "Chrysler",
+      "image": "https://i.ibb.co/LvYsRRT/item14.jpg",
+      "quantity": 10,
+      "description": {
+        "seating": "4-seat",
+        "body": "suv",
+        "odometer": "40,000",
+        "transmission": "5-speed automatic",
+        "color": "Black",
+        "comfortable": "This truck is comfortable to sit in, drives smoothly, and only has 40,000 miles on the odometer."
+      },
+      "price": 609437,
+      "supplier": "Xoom auto"
+    },
+    {
+      "id": 16,
+      "name": "Jaguar",
+      "image": "https://i.ibb.co/5vB2dDF/item2.jpg",
+      "quantity": 10,
+      "description": {
+        "seating": "6-seat",
+        "body": "juv",
+        "odometer": "70,000",
+        "transmission": "8-speed automatic",
+        "color": "blue",
+        "comfortable": "This truck is comfortable to sit in, drives smoothly, and only has 70,000 miles on the odometer."
+      },
+      "price": 26094,
+      "supplier": "Tajnoba Motor"
+    },
+    {
+      "id": 17,
+      "name": "Alfa REmo",
+      "image": "https://i.ibb.co/fNLSrDd/item1.jpg",
+      "quantity": 5,
+      "description": {
+        "seating": "5-seat",
+        "body": "guv",
+        "odometer": "50,000",
+        "transmission": "4-speed automatic",
+        "color": "Black",
+        "comfortable": "This truck is comfortable to sit in, drives smoothly, and only has 50,000 miles on the odometer."
+      },
+      "price": 10000,
+      "supplier": "Nk car"
+    },
+    {
+      "id": 18,
+      "name": "Bent",
+      "image": "https://i.ibb.co/DWfD3Td/item18.jpg",
+      "quantity": 25,
+      "description": {
+        "seating": "2-seat",
+        "body": "muv",
+        "odometer": "30,000",
+        "transmission": "5-speed automatic",
+        "color": "gary",
+        "comfortable": "This truck is comfortable to sit in, drives smoothly, and only has 30,000 miles on the odometer."
+      },
+      "price": 267800,
+      "supplier": "Navana.Ltd"
+    },
+    {
+      "id": 19,
+      "name": "Toshiba",
+      "image": "https://i.ibb.co/VwQZBcc/item17.jpg",
+      "quantity": 15,
+      "description": {
+        "seating": "2-seat",
+        "body": "suv",
+        "odometer": "50,000",
+        "transmission": "5-speed automatic",
+        "color": "orang",
+        "comfortable": "This truck is comfortable to sit in, drives smoothly, and only has 50,000 miles on the odometer.and this this car made in japan"
+      },
+      "price": 200678,
+      "supplier": "Navbd.Ltd"
+    },
+    {
+      "id": 20,
+      "name": "Tesla",
+      "image": "https://i.ibb.co/tP4F0mj/item19.jpg",
+      "quantity": 5,
+      "description": {
+        "seating": "5-seat",
+        "body": "suv",
+        "odometer": "50,000",
+        "transmission": "5-speed automatic",
+        "color": "red",
+        "comfortable": "This truck is comfortable to sit in, drives smoothly, and only has 50,000 miles on the odometer.you can many in our inventory web site it help to give you more cars "
+      },
+      "price": 200674,
+      "supplier": "mkana.Ltd"
+    }
+  ]
