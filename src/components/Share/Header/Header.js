@@ -50,7 +50,7 @@ const Header = () => {
       <Nav.Link as={Link} to="">
       <span className="menu-style">MY ITEM</span>
       </Nav.Link>
-      <Nav.Link as={Link} to=""><span className="menu-style">BLOGS</span></Nav.Link>
+      <Nav.Link as={Link} to="/blogs"><span className="menu-style">BLOGS</span></Nav.Link>
     </Nav>
   </Navbar.Collapse>
   </Container>
