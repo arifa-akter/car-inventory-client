@@ -4,6 +4,7 @@ import Blogs from './components/Blogs/Blogs';
 import Home from './components/Home/Home/Home';
 import Footer from './components/Share/Footer/Footer';
 import Header from './components/Share/Header/Header';
+import NotFound from './components/Share/NotFound/NotFound';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home></Home>}></Route>
       <Route path="/blogs" element={<Blogs></Blogs>}></Route>
+      <Route path="*" element={<NotFound></NotFound>}></Route>
     </Routes>
      <Footer></Footer>   
     </div>
