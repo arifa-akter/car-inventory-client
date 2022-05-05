@@ -20,28 +20,29 @@ const Blogs = () => {
                           <tbody>
                           <tr>
                           <th scope="row">1</th>
-                          <td>Lorem ipsum dolor sit amet</td>
-                          <td>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</td>
+                          <td>It is basically used on the client-side</td>
+                          <td>It is used on the server-side.</td>
                           </tr>
                           <tr>
                           <th scope="row">2</th>
-                          <td>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</td>
-                          <td>Lorem ipsum dolor sit ametLorem ipsum dolor sit amet</td>
+                          <td>Javascript is used in frontend development</td>
+                          <td>Nodejs is used in server-side development</td>
                           </tr>
                           <tr>
                           <th scope="row">3</th>
-                          <td>Lorem ipsum dolor sit ametLorem ipsum dolor sit amet</td>
-                          <td>Lorem ipsum dolor sit ametLorem ipsum dolor sit amet</td>
+                          <td>Javascript is capable enough to add HTML and play with the DOM</td>
+                          <td>Nodejs does not have capability to add HTML tags</td>
                           </tr>
                           <tr>                                
                           <th scope="row">4</th>
-                          <td>Lorem ipsum dolor sit ametLorem ipsum dolor sit amet</td>
-                          <td>Lorem ipsum dolor sit ametLorem ipsum dolor sit amet</td>
+                          <td>javascript is programming language </td>
+                          <td>node js is javascript run time environment</td>
                           </tr>
                           <tr>
                           <th scope="row">5</th>
-                          <td>Lorem ipsum dolor sit ametLorem ipsum dolor sit amet</td>
-                          <td>Lorem ipsum dolor sit ametLorem ipsum dolor sit amet</td>
+                          <td>It is the upgraded version of ECMA script that uses Chrome’s
+                               V8 engine written in C++.</td>
+                          <td>Nodejs is written in C, C++ and Javascript</td>
                           </tr>
                           </tbody>
                           </table>
