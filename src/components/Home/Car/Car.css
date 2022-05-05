@@ -1,12 +1,38 @@
 .car-card{
     border:1px solid #ddd;
+    box-shadow: 1px 1px 6px -2px;
 }
 .image-car img{
-    /* width:300px; */
     width:100%;
-    height: 200px;
+    height: 200px; 
 }
 .car-text h2{
     font-size: 20px;
     text-align: center;
+}
+.car-text ul {
+   list-style-type: none;
+}
+.name{
+    color:#c7081b;
+    font-size: 20px;
+    text-align: center; 
+    font-weight: 700;
+}
+.car-text span{
+    color:#c7081b;
+}
+.button-div{
+    display:flex;
+    justify-content: center;
+}
+.update-button{
+    border:none;
+    width:100%;
+    text-align: center;
+    color:#ffff;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(to bottom right, #c7081b, #e71026);
 }

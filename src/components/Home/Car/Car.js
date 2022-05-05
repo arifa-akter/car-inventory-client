@@ -2,7 +2,7 @@ import React from 'react';
 import './Car.css'
 const Car = ({car}) => {
     console.log(car)
-    const { name, image ,description, price , supplier } =car
+    const { name, image ,description, price , supplier, quantity } =car
     return (
        <div className="col-lg-4 col-12 col-md-6 g-3 gx-lg-4 d-flex justify-content-center mx-auto">
             <div className='car-card'>
@@ -10,21 +10,25 @@ const Car = ({car}) => {
              <img src={image} alt="" />
              </div>
              <div className="car-text">
-                 <h2>Name: {name}</h2>
-                 <h2>Description:</h2>
+                 <h2 className='name'>Name: {name}</h2>
+                 <h2 className='name'>Description:</h2>
                    <ul>
-                       <li>seating :{description.seating}</li>
-                       <li>Body :{description.body}</li>
-                       <li>Odometer :{description.odometer}</li>
-                       <li>transmission :{description.transmission}</li>
-                       <li>car color :{description.color}</li>
-                       <li>comfort :{description.comfortable}</li>
-                       <li>price:{price}</li>
-                       <li>supplier: {supplier}</li>
+                      <li><span>Quantity</span>: {quantity}</li>
+                       <li><span>seating </span>:{description.seating}</li>
+                       <li><span>Body</span> :{description.body}</li>
+                       <li><span>Odometer</span> :{description.odometer}</li>
+                       <li><span>transmission</span> :{description.transmission}</li>
+                       <li><span>car color</span> :{description.color}</li>
+                       <li><span>comfort</span> :{description.comfortable}</li>
+                       <li><span>price</span>:${price}</li>
+                       <li><span>supplier</span>: {supplier}</li>
                    </ul>
 
              </div>
-            </div>
+     <div className="button-div">
+     <button className='update-button'>update</button>
+     </div>
+     </div>
     </div>
     );
 };
