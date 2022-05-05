@@ -1,0 +1,41 @@
+.Footer{
+   padding-top: 30px;
+   padding-bottom: 10px;
+   background: url(../../../images/footer.jpg) no-repeat center;
+   background-size: cover;
+}
+.footer-text h2 {
+    color:#ffff;
+    font-size: 30px;
+    font-weight:600;
+    padding-bottom: 20px;
+}
+.footer-text{
+    margin-bottom:20px;
+}
+.footer-text i{
+    color:#ffff;
+    margin-top: 5px;
+    padding-right:10px;
+}
+.footer-text p{
+    color:#ffff;
+     /* padding-right:40px; */
+}
+.display{
+    display: flex;
+}
+.image-footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom:10px;
+}
+.line{
+    border-bottom: 1px solid #ffff;
+}
+.fo{
+    margin-top: 10px;
+}
+.image-footer span{
+color:#ffff ;
+}
