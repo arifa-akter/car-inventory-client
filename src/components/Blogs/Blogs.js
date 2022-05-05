@@ -48,15 +48,21 @@ const Blogs = () => {
                           </table>
 
                         <h2> <span>2.</span>When should you use node js and when should you use mongodb?</h2>
+                        <span className='reds'> node js:</span>
                         <p>
-                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                          Aperiam reiciendis tempora nisi tempore adipisci ab quod nemo
-                           labore quam eos facilis necessitatibus ea distinctio,
-                            blanditiis asperis vel obcaecati dignissimos qui.
-                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                          Aperiam reiciendis tempora nisi tempore adipisci ab quod nemo
-                           labore quam eos facilis necessitatibus ea distinctio,
-                            blanditiis asperis vel obcaecati dignissimos qui.
+                        javascript is most popular language other side node js is javascript 
+                        run time environment node js help in server side.we use any language in 
+                        backend side but if we want to one language in both side then use node js and javascript.
+                        Node.js is the greatest tool for building real-time web applications .Node.js is primarily used for non-blocking, 
+                        event-driven servers, due to its single-threaded nature. if we made big communication web application such as a facebook and twiter
+                        then we used node js.
+                        </p>
+                        <span className='reds'>mongodb:</span>
+                        <p>
+                         mongodb is unstructured non relationship nosQl data  
+                         here data store in json-formet which help to javascript and nodejs server
+                         side application . which is very help full for javascript side language. because data are 
+                         store in json
                         </p>
 
                          <h2> <span>3.</span>Difference between Sql and noSql ?</h2>
@@ -64,35 +70,35 @@ const Blogs = () => {
                           <thead className="thead-dark">
                           <tr>
                           <th scope="col"></th>
-                          <th scope="col" className='color-th'>JavaScript</th>
-                          <th scope="col" className='color-th'>Node js</th>
+                          <th scope="col" className='color-th'>Sql</th>
+                          <th scope="col" className='color-th'>NoSql</th>
                           </tr>
                           </thead>
                           <tbody>
                           <tr>
                           <th scope="row">1</th>
-                          <td>Lorem ipsum dolor sit amet</td>
-                          <td>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</td>
+                          <td>structure base data based </td>
+                          <td>non structure based data base </td>
                           </tr>
                           <tr>
                           <th scope="row">2</th>
-                          <td>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</td>
-                          <td>Lorem ipsum dolor sit ametLorem ipsum dolor sit amet</td>
+                          <td>Vertically Scalable</td>
+                          <td>Horizontally scalable</td>
                           </tr>
                           <tr>
                           <th scope="row">3</th>
-                          <td>Lorem ipsum dolor sit ametLorem ipsum dolor sit amet</td>
-                          <td>Lorem ipsum dolor sit ametLorem ipsum dolor sit amet</td>
+                          <td>These databases are not suited for hierarchical data storage.</td>
+                          <td>These databases are best suited for hierarchical data storage.</td>
                           </tr>
                           <tr>                                
                           <th scope="row">4</th>
-                          <td>Lorem ipsum dolor sit ametLorem ipsum dolor sit amet</td>
-                          <td>Lorem ipsum dolor sit ametLorem ipsum dolor sit amet</td>
+                          <td>Follows ACID property</td>
+                          <td>Follows CAP(consistency, availability, partition tolerance)</td>
                           </tr>
                           <tr>
                           <th scope="row">5</th>
-                          <td>Lorem ipsum dolor sit ametLorem ipsum dolor sit amet</td>
-                          <td>Lorem ipsum dolor sit ametLorem ipsum dolor sit amet</td>
+                          <td>These databases have fixed or static or predefined schema</td>
+                          <td>They have dynamic schema</td>
                           </tr>
                           </tbody>
                           </table>
