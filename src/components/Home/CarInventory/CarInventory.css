@@ -12,3 +12,21 @@
     font-weight: 600;
     color:#c7081b;
 }
+.manage-btton{
+    display:flex;
+    justify-content:center;
+}
+.manage-btn{
+    border:none;
+    width:100%;
+    text-align: center;
+    color:#ffff;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to bottom right, #c7081b, #e71026);
+}
