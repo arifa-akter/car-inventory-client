@@ -18,3 +18,33 @@
     -ms-transition: all linear 0.4s;
     -o-transition: all linear 0.4s;
 }
+.error-message{
+  font-weight: 600;
+  color:black;
+}
+i{
+    color:#c7081b;
+}
+.or{
+    position: relative;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.or::after {
+    position: absolute;
+    content: '';
+    top: 13px;
+    left: 0;
+    background:#d34250;
+    height: 2px;
+    width: 45%;
+}
+.or::before {
+    position: absolute;
+    content: '';
+    top: 13px;
+    right: 0;
+    background: #e45563;
+    height: 2px;
+    width: 45%;
+}

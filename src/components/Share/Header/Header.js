@@ -1,10 +1,19 @@
 import React from 'react';
+import { signOut } from 'firebase/auth';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import profile from '../../../images/profile.png'
 import './Header.css'
 import logo from '../../../images/logo.png'
+import auth from '../../../firebase.init'
 const Header = () => {
+
+  const[user] = useAuthState(auth)
+  console.log(user)
+  const SingOutUsers =()=>{
+    signOut(auth)
+  }
     return (
   <section className='nav-design'>
                <section className='top-header'>
@@ -13,10 +22,15 @@ const Header = () => {
                  <div className="col-12 col-lg-7 login-language ">
                   <div className="main-item d-flex justify-content-center d-lg-flex justify-content-lg-start">
                   <div className="login-language-main">
-                        <img src={profile} alt="" />
-                        <Link to='/login'>
-                        <span>Login</span>
-                        </Link>
+                    {user?
+                     <img src={user?.photoURL} alt="" />
+                    : <img src={profile} alt="" /> 
+                      
+                    }
+                    { user? <span onClick={SingOutUsers} className='link-login'>sing out</span>  :
+                         <Link to='/login'><span>Login</span> </Link> 
+                    }  
+                      
                         <Link to='/signUp'>
                         <span>Sign up</span>
                         </Link>
