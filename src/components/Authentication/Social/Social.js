@@ -27,7 +27,7 @@ const Social = () => {
     loadingError = 
     <p className='error-message'>
        loading ....
-        </p>
+    </p>
   }
  
     return (

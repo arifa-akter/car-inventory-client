@@ -1,5 +1,5 @@
 import React ,{ useRef }from 'react';
-import { Link , useNavigate} from 'react-router-dom';
+import { Link , useNavigate , useLocation} from 'react-router-dom';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init'
 import Social from '../Social/Social';
@@ -11,6 +11,8 @@ const Login = () => {
     const emailRef = useRef('')
     const [signInWithEmailAndPassword ,user,loading, error]= useSignInWithEmailAndPassword(auth)
     const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
+    const location = useLocation()
+    const from = location.state?.from?.pathname || "/"
     const navigate = useNavigate()
     let errorProperty;
     if (error) {
@@ -28,8 +30,9 @@ const Login = () => {
         signInWithEmailAndPassword(email ,password)
     }
     if(user){
-        navigate('/')
+        navigate(from , { replace: true })
      }
+
     const handleResatLink = async() =>{
         const email = emailRef.current.value
         console.log(email)
