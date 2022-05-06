@@ -1,0 +1,21 @@
+.common-authn{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: url(../../../images/background1.png) no-repeat center;
+    background-size: cover;
+}
+label{
+    display: block;
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom:9px;
+    color:#c7081b;
+ }
+ 
+ input{
+     font-size: 17px;
+     border: 2px solid #c7081b;
+ }
+ .from-item{
+     margin-bottom:15px;
+ }

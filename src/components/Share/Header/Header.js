@@ -14,9 +14,12 @@ const Header = () => {
                   <div className="main-item d-flex justify-content-center d-lg-flex justify-content-lg-start">
                   <div className="login-language-main">
                         <img src={profile} alt="" />
+                        <Link to='/login'>
                         <span>Login</span>
+                        </Link>
+                        <Link to='/signUp'>
                         <span>Sign up</span>
-                       
+                        </Link>
                         <span>
                         <i className="fa fa-globe" aria-hidden="true"></i>Language</span>
                    </div>
