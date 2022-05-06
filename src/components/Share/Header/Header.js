@@ -44,7 +44,7 @@ const Header = () => {
       <Nav.Link as={Link} to="/"><span className="menu-style">HOME</span></Nav.Link>
       <Nav.Link href="#deets" ><span className="menu-style">CAR INVENTORY</span></Nav.Link>
       <Nav.Link as={Link} to="/manageInv"><span className="menu-style">MANAGE INVENTORY</span></Nav.Link>
-      <Nav.Link as={Link} to="" href="" >
+      <Nav.Link as={Link} to="/addItem" href="" >
       <span className="menu-style">ADD ITEM</span>
       </Nav.Link>
       <Nav.Link as={Link} to="">

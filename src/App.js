@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes } from 'react-router-dom';
+import AddItem from './components/AddItem/AddItem';
 import Blogs from './components/Blogs/Blogs';
 import CarDetail from './components/CarDetail/CarDetail';
 import Home from './components/Home/Home/Home';
@@ -16,6 +17,7 @@ function App() {
       <Route path="/" element={<Home></Home>}></Route>
       <Route path="/carDetail/:id" element={<CarDetail></CarDetail>}></Route>
       <Route path="/manageInv" element={<ManageInventory></ManageInventory>}></Route>
+      <Route path="/addItem" element={<AddItem></AddItem>}></Route>
       <Route path="/blogs" element={<Blogs></Blogs>}></Route>
       <Route path="*" element={<NotFound></NotFound>}></Route>
     </Routes>
