@@ -1,13 +1,11 @@
 import React from 'react';
 import './MyOrder.css'
-const MyOrder = ({myItems ,handleDelete}) => {
+const MyOrder = ({myItems ,handleDelete ,handleDeleteManageInventory ,manageItem}) => {
     const {priceAdd, imageAdd ,supplierAdd, descriptionAdd , nameAdd ,_id ,} =myItems
-
-     
-  
     return (
         <div className="col-lg-12 col-12 col-md-6 g-3 gx-lg-4 d-flex justify-content-center mx-auto">
-              <table className="table table-bordered">
+        <div className="table-responsive">
+        <table className="table table-bordered">
                          <thead>
                           <tr>
                           <th className="text-danger" scope="col">name</th>
@@ -31,6 +29,7 @@ const MyOrder = ({myItems ,handleDelete}) => {
                            </tr>
                  </tbody>
                  </table>
+                 </div>
             </div>
     );
 };

@@ -12,6 +12,8 @@ import RequireAuth from './components/RequireAuth/RequireAuth';
 import Footer from './components/Share/Footer/Footer';
 import Header from './components/Share/Header/Header';
 import NotFound from './components/Share/NotFound/NotFound';
+import UpDate from './components/UpDate/UpDate';
+import UpInfo from './components/UpInfo/UpInfo';
 
 function App() {
   return (
@@ -36,6 +38,12 @@ function App() {
        <MyItem></MyItem>
         </RequireAuth>
      }></Route>
+       <Route path="/updateCollection" element={
+          <RequireAuth>
+         <UpInfo></UpInfo>
+           </RequireAuth>
+       }></Route>
+     <Route path="/update" element={<UpDate></UpDate>}></Route>
      <Route path="/login" element={<Login></Login>}></Route>
      <Route path="/signUp" element={<SignUp></SignUp>}></Route>
       <Route path="/addItem" element={<AddItem></AddItem>}></Route>

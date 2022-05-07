@@ -4,8 +4,8 @@ import { Link,} from 'react-router-dom';
 
 const CarDetail = () =>{
     const[oneCarDetail] = useOneCar({})
-
     const { _id , name, image ,description, price , supplier, quantity } = oneCarDetail
+
     return (
         <section className="car-detail">
             <div className="container">
@@ -18,7 +18,8 @@ const CarDetail = () =>{
       <div className="car-detail-text car-text">
       <h2 className='name'>Name: {name}</h2>
           <h2 className='name'> Description:</h2>
-          <table className="table table-bordered">
+     <div className="table-responsive">
+     <table className="table table-bordered">
                          <thead>
                           <tr>
                           <th className="text-danger" scope="col">name</th>
@@ -29,7 +30,7 @@ const CarDetail = () =>{
                           <th className="text-danger" scope="col">quantity</th>
                           <th className="text-danger" scope="col">seating</th>
                           <th className="text-danger" scope="col">Odometer</th>
-                          <th className="text-danger" scope="col">price</th>
+                          <th className="text-danger " scope="col">price</th>
                           <th className="text-danger" scope="col">supplier</th>
                           <th className="text-danger" scope="col">sold</th>
                           <th className="text-danger" scope="col">Delivery</th>
@@ -54,10 +55,11 @@ const CarDetail = () =>{
                            </tr>
                  </tbody>
                  </table>
+                   </div>
        
-      </div>
+                 </div>
      
-       </div>
+                 </div>
             </div>
             <div className="row quantity">
                 <div className="col-lg-7 col-12 mx-auto">
@@ -82,7 +84,7 @@ const CarDetail = () =>{
                          </div>
                      </div>
             </div>
-      
+
         </section>
     );
 };

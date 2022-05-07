@@ -68,8 +68,11 @@ const Header = () => {
             </Nav.Link>
             <Nav.Link as={Link} to="/myItem">
             <span className="menu-style">MY ITEM</span>
-             </Nav.Link>
-        </>
+            </Nav.Link>
+            <Nav.Link as={Link} to="/updateCollection">
+            <span className="menu-style"> update Collection</span>
+            </Nav.Link>
+         </>
       }
       <Nav.Link as={Link} to="/blogs"><span className="menu-style">BLOGS</span></Nav.Link>
     </Nav>
