@@ -7,6 +7,7 @@ import Blogs from './components/Blogs/Blogs';
 import CarDetail from './components/CarDetail/CarDetail';
 import Home from './components/Home/Home/Home';
 import ManageInventory from './components/ManageInventory/ManageInventory';
+import MyItem from './components/MyItem/MyItem';
 import RequireAuth from './components/RequireAuth/RequireAuth';
 import Footer from './components/Share/Footer/Footer';
 import Header from './components/Share/Header/Header';
@@ -25,9 +26,15 @@ function App() {
         </RequireAuth>
         }></Route>
       <Route path="/manageInv" element={
-         <RequireAuth>
+        <RequireAuth>
       <ManageInventory></ManageInventory>
-         </RequireAuth>
+       </RequireAuth>
+     }></Route>
+    
+     <Route path="/myItem" element={
+        <RequireAuth>
+       <MyItem></MyItem>
+        </RequireAuth>
      }></Route>
      <Route path="/login" element={<Login></Login>}></Route>
      <Route path="/signUp" element={<SignUp></SignUp>}></Route>

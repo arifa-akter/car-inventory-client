@@ -66,7 +66,7 @@ const Header = () => {
             <Nav.Link as={Link} to="/addItem" href="" >
              <span className="menu-style">ADD ITEM</span>
             </Nav.Link>
-            <Nav.Link as={Link} to="">
+            <Nav.Link as={Link} to="/myItem">
             <span className="menu-style">MY ITEM</span>
              </Nav.Link>
         </>
