@@ -5,11 +5,13 @@ import git from '../../../images/git.png'
 import { useSignInWithGoogle} from 'react-firebase-hooks/auth';
 import { useSignInWithGithub} from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate ,useLocation } from 'react-router-dom';
 const Social = () => {
+    const location = useLocation()
+    const navigate = useNavigate()
+    const from = location.state?.from?.pathname || "/"
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const [signInWithGithub, user2, loading2, error2] = useSignInWithGithub(auth);
-    const navigate = useNavigate()
     let errorProperty;
   if (error || error2) {
     errorProperty = <div>
@@ -22,6 +24,10 @@ const Social = () => {
   if(user || user2){
       navigate('/')
   }
+  if(user || user2){
+    navigate(from , { replace: true })
+}
+
   let loadingError
   if(loading || loading2){
     loadingError = 

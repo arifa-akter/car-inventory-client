@@ -9,11 +9,11 @@ import './Login.css'
 
 const Login = () => {
     const emailRef = useRef('')
+    const location = useLocation()
+    const navigate = useNavigate()
+    const from = location.state?.from?.pathname || "/"
     const [signInWithEmailAndPassword ,user,loading, error]= useSignInWithEmailAndPassword(auth)
     const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
-    const location = useLocation()
-    const from = location.state?.from?.pathname || "/"
-    const navigate = useNavigate()
     let errorProperty;
     if (error) {
         errorProperty = <div>
