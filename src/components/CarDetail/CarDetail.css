@@ -11,3 +11,8 @@
 .quantity{
     padding-top: 30px;
 }
+
+.car-detail-img img{
+    width:100%;
+    height: 400px;
+}
