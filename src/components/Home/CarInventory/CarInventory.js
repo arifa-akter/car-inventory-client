@@ -9,7 +9,7 @@ const CarInventory = () => {
     const sixItem = cars.slice(0,6)
     console.log(sixItem)
     return (
-        <section id="" className='car-inventory'>
+        <section id="carInventory" className='car-inventory'>
                  <div className="container">
                      <h1 className='car-house-header'>CARS HOUSE</h1>
                      <div className="row">
