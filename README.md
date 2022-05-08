@@ -1,10 +1,19 @@
-# Getting Started with Create React App
+# car inventory
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# description
+this website have banner section . car inventory section , and also there extra two part in home page  which is latest news and service timing ,when you click on up date button you go to privet route and when you login you can see update collection myItem manage inventory . you can delete and update and add item which store in upDate collection and myItem route.
 
-In the project directory, you can run:
+# Feature and functionality
+<ul>
+<li>bootstrap framework and it is mobile responsive </li>
+<li>react firebase hook</li>
+<li>you can add item and also update new item which is show in add my item and
+update collection</li>
+<li>router</li>
+<li>react toastify</li>
+</ul>
 
 ### `npm start`
 

@@ -6,6 +6,7 @@ import Social from '../Social/Social';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Login.css'
+import Loading from '../../Share/Loading/Loading'
 
 const Login = () => {
     const emailRef = useRef('')
@@ -65,7 +66,7 @@ const Login = () => {
                     <input type= "password" className=' w-100 h-100 py-2'  name="password" id="" required />
                     {errorProperty}
                              {
-                              loading && <p>loading.....</p>
+                              loading && <Loading></Loading>
                              }
                 </div>
                 <span>create a new Account? </span>

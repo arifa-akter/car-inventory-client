@@ -6,6 +6,7 @@ import { useSignInWithGoogle} from 'react-firebase-hooks/auth';
 import { useSignInWithGithub} from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init'
 import { useNavigate ,useLocation } from 'react-router-dom';
+import Loading from '../../Share/Loading/Loading'
 const Social = () => {
     const location = useLocation()
     const navigate = useNavigate()
@@ -32,7 +33,7 @@ const Social = () => {
   if(loading || loading2){
     loadingError = 
     <p className='error-message'>
-       loading ....
+       <Loading></Loading>
     </p>
   }
  

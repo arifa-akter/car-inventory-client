@@ -3,7 +3,7 @@ import { Link, useNavigate ,useLocation  } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword} from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import Social from '../Social/Social';
-
+import Loading from '../../Share/Loading/Loading'
 const SignUp = () => {
     const location = useLocation()
     const from = location.state?.from?.pathname || "/"
@@ -79,7 +79,7 @@ const SignUp = () => {
                 <input type= "password" className=' w-100 h-100 py-2'  name="passwordConform" id="" required />
                 {errorSignUp}
                 {
-                loading && <p> loading.....</p>
+                loading && <Loading></Loading>
                 }
                 {errorProperty}
             </div>
