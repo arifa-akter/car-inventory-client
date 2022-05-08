@@ -28,6 +28,7 @@ const UpInfo = () => {
     return (
         <section className='my-upInfo'>
             <div className="container">
+            <h2 className='text-center text-danger'> up Date collection</h2>
             <div className="row">
                   {
                       updates.map(manageItem =><UpdateMy

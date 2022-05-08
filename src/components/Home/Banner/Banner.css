@@ -36,3 +36,26 @@
 .text h3{
     text-align: center;
 }
+
+@media (max-width:575.98px){
+    .banner-heading h3{
+        font-size:30px;
+       
+    }
+
+    .name-style-2{
+        font-size: 30px;
+    }
+
+    .name-style-4{
+        font-size: 30px;
+    }
+
+    .name-style{
+        margin-top: 10px;
+    }
+
+    .name-style-3{
+        margin-top: 10px;
+    }
+}
