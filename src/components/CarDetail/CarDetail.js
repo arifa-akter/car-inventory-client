@@ -4,13 +4,11 @@ import { useParams } from "react-router-dom";
 import { Link,} from 'react-router-dom';
 
 const CarDetail = () =>{
-    const[oneCarDetail ] = useOneCar({})
+    const[oneCarDetail] = useOneCar({})
     const { _id , name, image ,description, price , supplier, quantity } = oneCarDetail
     const {id} =useParams()
-    if(quantity === 0){
-        alert('quantity value is more then 0 please increase quantity')
-    }
-
+ 
+  
     const handleQuantity =(event)=>{
     event.preventDefault()
     if(event.target.increase.value < 0 || event.target.increase.value == 0 ){
@@ -20,7 +18,6 @@ const CarDetail = () =>{
         const quantityData={
             quantity:parseInt(event.target.increase.value)+parseInt(quantity)
         }
-    
         fetch (`https://boiling-wildwood-73300.herokuapp.com/service/${id}`,{
             method: 'PUT',
             headers:{
@@ -28,27 +25,29 @@ const CarDetail = () =>{
             },
             body: JSON.stringify(quantityData)
             })
-            // .then(res=>res.json())
+            .then(res=>res.json())
             .then(data=>{
                 console.log('success data',data)
-                alert('Quantity increase')
+                // alert('Quantity increase')
                  event.target.reset()
                 //  window.location.reload()
-             
-    
-        })
-        
+          })
+
         }
 
     }
 
     const delivery =(event)=>{
         event.preventDefault()
-        
+        if(quantity === 0 || quantity< 0){
+            alert('quantity value is more then 0 please increase quantity incresd quantity')
+        }
+   
+      
+      else{
         const quantityData={
             quantity:parseInt(quantity)-parseInt(1)
         }
-      
         fetch (`https://boiling-wildwood-73300.herokuapp.com/service/${id}`,{
             method: 'PUT',
             headers:{
@@ -59,12 +58,11 @@ const CarDetail = () =>{
             // .then(res=>res.json())
             .then(data=>{
                 console.log('success data',data)
-                alert('Quantity decrease')
+                // alert('Quantity decrease')
                  event.target.reset()
-                // location.reload()
-             
-    
+                // location.reload()          
         })
+      }
         }
   
     return (
