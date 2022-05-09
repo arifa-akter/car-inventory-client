@@ -1,6 +1,6 @@
 # car inventory
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://car-inventory-613c5.web.app/).
 
 # description
 this website have banner section . car inventory section , and also there extra two part in home page  which is latest news and service timing ,when you click on up date button you go to privet route and when you login you can see update collection myItem manage inventory . you can delete and update and add item which store in upDate collection and myItem route.
