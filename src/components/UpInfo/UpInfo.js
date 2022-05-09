@@ -1,19 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import './UpInfo.css'
 import UpdateMy from '../UpdateMy/UpdateMy';
+import auth from '../../firebase.init';
+import { useAuthState } from 'react-firebase-hooks/auth';
 const UpInfo = () => {
     const[updates , setUpdates] = useState([])
+    const [user] =useAuthState(auth)
     console.log(updates)
     useEffect(()=>{
-        fetch('http://localhost:5000/update')
+        const email =user.email
+        fetch(`https://boiling-wildwood-73300.herokuapp.com/update?email=${email}`)
         .then(res => res.json())
         .then(data => setUpdates(data))
-    },[])
+    },[user])
     const handleDeleteManageInventory = (id)=>{
         const confirmYOu = window.confirm('are you confirm you want to delete')
         if(confirmYOu){
           console.log(id)
-          fetch(`http://localhost:5000/update/${id}`,{
+          fetch(`https://boiling-wildwood-73300.herokuapp.com/update/${id}`,{
             method: 'DELETE',
           })
             .then(res=>res.json())
@@ -28,7 +32,7 @@ const UpInfo = () => {
     return (
         <section className='my-upInfo'>
             <div className="container">
-            <h2 className='text-center text-danger'> up Date collection</h2>
+            <h2 className='text-center text-danger'> My ITEM</h2>
             <div className="row">
                   {
                       updates.map(manageItem =><UpdateMy

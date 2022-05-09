@@ -3,10 +3,11 @@ import { Link , useNavigate , useLocation} from 'react-router-dom';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init'
 import Social from '../Social/Social';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Login.css'
 import Loading from '../../Share/Loading/Loading'
+import axios from 'axios';
 
 const Login = () => {
     const emailRef = useRef('')
@@ -24,11 +25,15 @@ const Login = () => {
                 </p>
           </div>
       }
-    const handleLoginForm =(event) =>{
+    const handleLoginForm =   async (event) =>{
         event.preventDefault()
         const email = event.target.email.value
         const password = event.target.password.value
-        signInWithEmailAndPassword(email ,password)
+       await signInWithEmailAndPassword(email ,password)
+       const {data} = await axios.post ( 'https://boiling-wildwood-73300.herokuapp.com/login' , {email})
+       localStorage.setItem('accessToken' , data.accessToken)
+          navigate(from , { replace: true })
+       console.log(data)
     }
     if(user){
         navigate(from , { replace: true })
@@ -77,7 +82,7 @@ const Login = () => {
                           <button className='social-btn w-100'>
                            Login</button>
                 <Social></Social>
-                <ToastContainer/>
+               
                 </form>
             </div>
             </div>

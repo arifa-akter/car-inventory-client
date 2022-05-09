@@ -1,7 +1,7 @@
 import React from 'react';
 
 const UpdateMy = ({ manageItem , handleDeleteManageInventory}) => {
-    const { _id , name, image ,description, price , supplier, quantity }= manageItem
+    const { _id , name, image ,description, price , supplier, quantity ,email }= manageItem
     return (
         <div className="col-lg-12 col-12 col-md-6 g-3 gx-lg-4 d-flex justify-content-center mx-auto">
                        <div className="table-responsive">
@@ -9,6 +9,7 @@ const UpdateMy = ({ manageItem , handleDeleteManageInventory}) => {
                          <thead>
                           <tr>
                           <th className="text-danger" scope="col">name</th>
+                          <th className="text-danger" scope="col">email</th>
                           <th className="text-danger" scope="col">Id</th>
                           <th className="text-danger" scope="col">image</th>
                           <th className="text-danger" scope="col">color</th>
@@ -27,6 +28,7 @@ const UpdateMy = ({ manageItem , handleDeleteManageInventory}) => {
                     
                                 {/* <th scope="row">1</th> */}
                                 <td>{name}</td>
+                                <td>{email}</td>
                                 <td>{_id}</td>
                                 <td><img src={image} alt="" style={{width:'40px' ,height:'40px'}} /></td>
                                 <td>{description?.color}</td>

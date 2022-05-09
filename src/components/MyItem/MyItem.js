@@ -9,7 +9,7 @@ const MyItem = () =>{
         const confirmYOu = window.confirm('are you confirm you want to delete')
         if(confirmYOu){
           console.log(id)
-          fetch(`http://localhost:5000/addItems/${id}`,{
+          fetch(`https://boiling-wildwood-73300.herokuapp.com/addItems/${id}`,{
             method: 'DELETE',
           })
             .then(res=>res.json())
@@ -25,7 +25,7 @@ const MyItem = () =>{
     return (
       <section className='my-item'>
           <div className="container">
-             <h2 className='text-center text-danger'>MY ITEM</h2>
+             <h2 className='text-center text-danger'>ORDER COLLECTION</h2>
               <div className="row">
                   {
                       addItem.map(myItems =><MyOrder

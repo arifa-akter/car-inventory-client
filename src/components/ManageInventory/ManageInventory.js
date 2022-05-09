@@ -11,7 +11,7 @@ const ManageInventory = () => {
         const confirmYOu = window.confirm('are you confirm you want to delete')
         if(confirmYOu){
           console.log(id)
-          fetch(`http://localhost:5000/inventory/${id}`,{
+          fetch(`https://boiling-wildwood-73300.herokuapp.com/inventory/${id}`,{
             method: 'DELETE',
           })
             .then(res=>res.json())
@@ -32,10 +32,10 @@ const ManageInventory = () => {
                          <div className="col-lg-12 col-12">
                              <div className="manage-btton">
                                 <Link to="/addItem">
-                                <button className='manage-btn'>ADD ITEM</button>
+                                <button className='manage-btn'>order</button>
                                 </Link>
                                 <Link to="/update">
-                                <button className='manage-btn'>update</button>
+                                <button className='manage-btn'>Add Item</button>
                                 </Link>
                              </div>
                          </div>
@@ -57,7 +57,7 @@ const ManageInventory = () => {
                           <th className="text-danger " scope="col">odometer</th>
                           <th className="text-danger" scope="col">price</th>
                           <th className="text-danger" scope="col">supplier</th>
-                          <th className="text-danger" scope="col">upDate</th>
+                          <th className="text-danger" scope="col">AddItem</th>
                           <th className="text-danger" scope="col">delete</th>
                           </tr>
                     </thead>
@@ -78,7 +78,7 @@ const ManageInventory = () => {
                                 <td>{c.price}</td>
                                 <td>{c.supplier}</td>
                                 <td> <Link to ='/update' >
-                                   <button className='update-button ' style={{background:'#d3626d'}}>Update</button>
+                                   <button className='update-button ' style={{background:'#d3626d'}}>Add Item</button>
                                  </Link></td>
                                  <td><button className='update-button' onClick={()=>handleDeleteItem(c._id)}>Delete</button></td>
                                  

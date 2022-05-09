@@ -15,8 +15,9 @@ const UpDate = () => {
         const odometer=event.target.odometer.value
         const quantity =event.target.quantity.value
         const transmission =event.target.transmission.value
+        const email=event.target.email.value
         const seating=event.target.seat.value
-        const newItem = {name ,quantity, description:{
+        const newItem = {name ,quantity, email, description:{
                        body,
                        color,
                        comfortable,
@@ -27,7 +28,7 @@ const UpDate = () => {
         console.log(newItem)
 
            //    send a data to server
-    fetch('http://localhost:5000/inventory',{
+    fetch('https://boiling-wildwood-73300.herokuapp.com/inventory',{
         method: 'POST',
         headers:{
             'content-type':'application/json'
@@ -41,7 +42,7 @@ const UpDate = () => {
              event.target.reset()
     })
 
-    fetch('http://localhost:5000/update',{
+    fetch('https://boiling-wildwood-73300.herokuapp.com/update',{
         method: 'POST',
         headers:{
             'content-type':'application/json'
@@ -58,7 +59,7 @@ const UpDate = () => {
     return (
         <section className='update'>
             <div className="container">
-            <h2 className="text-danger text-center">UPDATE</h2>
+            <h2 className="text-danger text-center">ADD ITEM</h2>
             <div className="row">
                          <div className="col-lg-12 col-12">
                              <div className="manage-btton">
@@ -77,6 +78,12 @@ const UpDate = () => {
                    Name
                 </label>
                 <input type= "text" className=' w-100 h-100 py-2'  name="name" id="" required />
+            </div>
+            <div className='from-item'>
+                <label htmlFor="name">
+                  email
+                </label>
+                <input type= "email" className=' w-100 h-100 py-2'  name="email" id="" required />
             </div>
             <div className='from-item'>
                 <label htmlFor="description">

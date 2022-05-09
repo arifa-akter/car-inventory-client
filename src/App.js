@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import AddItem from './components/AddItem/AddItem';
 import Login from './components/Authentication/Login/Login';
 import SignUp from './components/Authentication/SignUp/SignUp';
@@ -28,20 +29,21 @@ function App() {
         </RequireAuth>
         }></Route>
       <Route path="/manageInv" element={
-        <RequireAuth>
-      <ManageInventory></ManageInventory>
-       </RequireAuth>
-     }></Route>
+      <RequireAuth>
+   <ManageInventory></ManageInventory>
+        </RequireAuth>
+       
+     }> </Route>
     
      <Route path="/myItem" element={
-        <RequireAuth>
-       <MyItem></MyItem>
-        </RequireAuth>
+   <RequireAuth>
+  <MyItem></MyItem>
+     </RequireAuth>
      }></Route>
        <Route path="/updateCollection" element={
           <RequireAuth>
-         <UpInfo></UpInfo>
-           </RequireAuth>
+          <UpInfo></UpInfo>
+            </RequireAuth>
        }></Route>
      <Route path="/update" element={<UpDate></UpDate>}></Route>
      <Route path="/login" element={<Login></Login>}></Route>
@@ -50,7 +52,8 @@ function App() {
       <Route path="/blogs" element={<Blogs></Blogs>}></Route>
       <Route path="*" element={<NotFound></NotFound>}></Route>
     </Routes>
-     <Footer></Footer>   
+     <Footer></Footer> 
+     <ToastContainer/>  
     </div>
   );
 }

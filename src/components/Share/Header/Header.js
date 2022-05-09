@@ -60,17 +60,20 @@ const Header = () => {
     <Nav className="ms-auto nav-bg">
       <Nav.Link as={Link} to="/"><span className="menu-style">HOME</span></Nav.Link>
       <Nav.Link href="home#carInventory" ><span className="menu-style">CAR INVENTORY</span></Nav.Link>
-      {
+       {
         user && <>
             <Nav.Link as={Link} to="/manageInv"><span className="menu-style">MANAGE INVENTORY</span></Nav.Link>
             <Nav.Link as={Link} to="/addItem" href="" >
-             <span className="menu-style">ADD ITEM</span>
+             <span className="menu-style">ORDER</span>
             </Nav.Link>
             <Nav.Link as={Link} to="/myItem">
-            <span className="menu-style">MY ITEM</span>
+            <span className="menu-style">ORDER COLLECTION</span>
             </Nav.Link>
             <Nav.Link as={Link} to="/updateCollection">
-            <span className="menu-style"> update Collection</span>
+            <span className="menu-style">MY ITEM</span>
+            </Nav.Link>
+            <Nav.Link as={Link} to="/update">
+            <span className="menu-style">ADD ITEM</span>
             </Nav.Link>
          </>
       }
